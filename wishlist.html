@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #wishlist-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .wishlist-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .wishlist-item button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .wishlist-item button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wishlist-container">
+        <h2>My Wishlist</h2>
+
+        <div class="wishlist-item">
+            <span>Product 1</span>
+            <button onclick="removeItem(1)">Remove</button>
+        </div>
+
+        <div class="wishlist-item">
+            <span>Product 2</span>
+            <button onclick="removeItem(2)">Remove</button>
+        </div>
+
+        <!-- Add more wishlist items as needed -->
+
+    </div>
+
+    <script>
+        function removeItem(itemId) {
+            // Add logic to remove item from the wishlist (e.g., update database or local storage)
+            alert('Item removed from wishlist!');
+        }
+    </script>
+
+</body>
+</html>
